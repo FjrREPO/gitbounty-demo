@@ -7,4 +7,12 @@ function sum(numbers) {
   return total;
 }
 
-module.exports = { sum };
+// Calculates the average of an array of numbers.
+function average(numbers) {
+  if (!numbers || numbers.length === 0) {
+    return 0;
+  }
+  return sum(numbers) / numbers.length;
+}
+
+module.exports = { sum, average };
